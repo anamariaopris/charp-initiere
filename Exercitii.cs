@@ -6,5 +6,6 @@ namespace initiere
 {
     internal class Exercitii
     {
+        //test
     }
 }
