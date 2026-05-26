@@ -11,7 +11,7 @@ class Program
         //Console.WriteLine((char)('a' - 32));
 
 
-        Exercitii.Ex16();
+        Conditionale.Cond01();
     }
 }
 

@@ -17,6 +17,22 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int numar = 9;
+ 
+        if( numar > 0)
+        {
+
+            Console.WriteLine(numar+" este pozitiv");
+        }else if( numar < 0)
+        {
+            Console.WriteLine(numar+" este negativ");
+        }
+        else
+        {
+            Console.WriteLine("zero");
+        }
+
+        
     }
 
     public static void Cond02()
