@@ -83,7 +83,7 @@ namespace initiere
             x = 9;// o variabila retine ultima valoare atribuita
 
             Console.WriteLine(x);
-            Console.WriteLine("x="+x);
+            Console.WriteLine("x=" + x);
         }
         public static void Ex3()
         {
@@ -134,13 +134,13 @@ namespace initiere
         }
         public static void Ex8()
         {
-            int a =16;
+            int a = 16;
             int b = 32;
             int k = 4;
 
             if (a % k == 0 && b % k == 0)
             {
-                Console.WriteLine($"{a/k}/{b/k}");
+                Console.WriteLine($"{a / k}/{b / k}");
             }
             else
             {
@@ -158,7 +158,7 @@ namespace initiere
             else if (zi > 10 && zi <= 20)
             {
                 Console.WriteLine("a doua decada");
-            } else {            
+            } else {
                 Console.WriteLine("a treia decada");
             }
         }
@@ -172,23 +172,106 @@ namespace initiere
 
             if (x >= 'A' && x <= 'Z')
             {
-                x =(char)( x + 32);
+                x = (char)(x + 32);
             }
 
 
-             if (x == 'a' || x == 'e'|| x == 'i' || x == 'o' || x== 'u')
-             {
-                Console.WriteLine(x+" este vocala");
-             }       
-             else if(x>='a'&&x<='z')
-             {
-                Console.WriteLine(x+"este consoana");
+            if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u')
+            {
+                Console.WriteLine(x + " este vocala");
+            }
+            else if (x >= 'a' && x <= 'z')
+            {
+                Console.WriteLine(x + "este consoana");
             }
             else
             {
                 Console.WriteLine("nu este caracter valid");
             }
 
+        }
+
+        public static void ex17()
+        {
+            int g = 15;
+            int p = 23;
+            int total = 2 * g + 4 * p + 2;
+
+            string solutie = "";
+            solutie += "In curte avem\n";
+            solutie += g + " gaini\n";
+            solutie += p + " pisisic\n";
+            solutie += "In total " + total;
+
+            Console.WriteLine(solutie);
+
+
+        }
+
+        public static void ex18()
+        {
+            int a = 2;
+            int e = 4;
+            int totalR = a * 3 + e * 2;
+
+            string solutie = "";
+            solutie += "In aeroport sunt\n";
+            solutie += a + " avioane\n";
+            solutie += e + " elicoptere\n";
+            solutie += "Total " + totalR;
+
+            Console.WriteLine(solutie);
+
+
+        }
+        //% rest 5%2=>1 restul impartirii lui 5 la 2 este 1
+        // 123%10 => 3 
+        public static void ex19()
+        {
+            int x = 123;
+            int y = 349;
+
+            int suma = x + y;
+            int uc = suma % 10;
+            Console.WriteLine($"Uc({x}+{y})={uc}");
+
+        }
+        //Recapitulare: && si         != diferit
+        //              || sau        == egalitate
+        //              !  negatie
+        // Instructiunea conditionala if 
+        // if(conditie){
+        //  executa
+        // }
+        // 
+        //
+
+        public static void ex20()
+        {
+            //Sa se verifice daca copilul este major
+            //
+            int varstaCopil = 12;
+
+            if (varstaCopil > 18)
+            {
+
+                Console.WriteLine($"Varsta copilului este {varstaCopil} prin urmare este major");
+            }
+            else
+            {
+                Console.WriteLine($"Varsta copilului este {varstaCopil} prin urmare este minor");
+            }
+        }
+        public static void ex21()
+        {
+            //sa se afiseze max a doua nr
+            int numar1 = 5;
+            int numar2 = 10;
+
+            if (numar2 > numar1)
+            {
+                Console.WriteLine($" {numar2} Este maximul numerelor");
+            }
         }
     }
 }
