@@ -1,3 +1,5 @@
+using System.ComponentModel.Design;
+
 namespace initiere;
 
 internal class Conditionale
@@ -49,6 +51,17 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int numar = 20;
+        
+        if (numar%2 == 0)
+
+        {
+            Console.WriteLine(numar + "este par");
+        }
+        else
+        {
+            Console.WriteLine(numar +" este impar");
+        }
     }
 
     public static void Cond03()
@@ -64,6 +77,18 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int a = 5;
+        int b = 12;
+
+        if (a < b)
+        {
+            Console.WriteLine(b + "este maximul");
+        }
+        else
+        {
+            Console.WriteLine(b + "este minimul");
+        } 
+
     }
 
     public static void Cond04()
@@ -79,6 +104,23 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int a = 14;
+        int b = 329;
+        int c = 17;
+
+        if (a>b&&a>c)
+        {
+            Console.WriteLine("Maximul este "+a);
+
+        }else if (b > c)
+        {
+            Console.WriteLine("Maximul este " + b);
+        }
+        else
+        {
+
+            Console.WriteLine("Maximul este " + c);
+        }
     }
 
     public static void Cond05()
@@ -98,6 +140,22 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int nota = 5;
+        if (nota >= 9)
+        {
+            Console.WriteLine("EXCELENT ");
+        } else if (nota >= 7)
+        {
+            Console.WriteLine("Bine ");
+        }
+        else if (nota >= 5)
+        {
+            Console.WriteLine("Suficient ");
+        }
+        else
+        {
+            Console.WriteLine("Insuficient");
+        }
     }
 
     public static void Cond06()
@@ -116,6 +174,27 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        int varsta = 20;
+
+        if (varsta > 64)
+        {
+            Console.WriteLine("varstnic ");
+        }
+        else if (varsta > 18)
+        {
+            Console.WriteLine("Adult ");
+        }
+        else if (varsta > 13)
+        {
+            Console.WriteLine("adolescent ");
+        }
+        else
+        {
+            Console.WriteLine("copil ");
+        }
+            
+        
+
     }
 
     public static void Cond07()
@@ -137,6 +216,26 @@ internal class Conditionale
         // ============================================================
 
         // TODO
+        string utilizatorCorect = "admin";
+        string parolaCorecta = "1234";
+
+
+        string utilizatorIntrodus = "adminasdasd";
+        string parolaIntrodusa = "1234asdasd";
+
+        if (utilizatorIntrodus.Equals(utilizatorCorect)&&parolaIntrodusa.Equals(parolaCorecta))
+        {
+
+            Console.WriteLine("V-ati logat cu succes");
+        }else if (!utilizatorIntrodus.Equals(utilizatorCorect))
+        {
+            Console.WriteLine("A-ti introdus un username gresit");
+        }
+        else 
+        {
+            Console.WriteLine("Parola introdusa este gresita");
+        }
+
     }
 
     public static void Cond08()
