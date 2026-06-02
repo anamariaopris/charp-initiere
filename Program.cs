@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        BuclaRepetitivaWhile.While06();
+        BuclaRepetitivaWhile.While09();
     }
 }
 

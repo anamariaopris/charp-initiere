@@ -1,3 +1,6 @@
+using System.ComponentModel.Design;
+using System.Security.Cryptography;
+
 namespace initiere;
 
 internal class ConditionaleNivelMediu
@@ -15,9 +18,34 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+        int a = 4;
+        int b = 12;
+        int c = 8;
+        int d = 15;
+
+        // if (d > c)
+        // {
+        //     Console.WriteLine($"Maximul numerelor este {d}");
+        //}
+        if (a >= b && a >= c && a >=d)
+        {
+            Console.WriteLine($"Maximul este" + a);
+        }
+        else if (b >= a && b >= c && b >=d)
+        {
+            Console.WriteLine( " Maximul este" + b);
+        }
+        else if (c >= a && c >= b && c >= d)
+        {
+            Console.WriteLine( "Maximul este" + c);
+        }
+        else
+        {
+            Console.WriteLine( "Maximul numerelor este" + d);
+        }
     }
 
-    public static void Med02()
+    public static void Med02() 
     {
         // ============================================================
         // MEDIU 02 - MEDIANA DIN 3 NUMERE
@@ -31,7 +59,18 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+        int a = 7;
+        int b = 2;
+        int c = 5;
+
+        int suma = a + b + c;
+        double cat = suma / 3.0;
+
+        //Console.WriteLine("Mediana numerelor este " +cat);
+
+        Console.WriteLine($"Mediana numerelor este {cat}");
     }
+    //Cum fac rotunjirea?
 
     public static void Med03()
     {
@@ -52,6 +91,19 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+        int a = 5;
+        int b = 5;
+        int c = 8;
+
+        if (a >= b)
+        {
+            Console.WriteLine("Triunghiul este isoscel");
+        }
+        else
+        {
+            Console.WriteLine("Triungiul este invalid");
+        }
+
     }
 
     public static void Med04()
@@ -73,6 +125,23 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+        double a = 1;
+        double b = -5;
+        double c = 6;
+        
+        if (a == 0 && b == 0 && c == 0)
+        {
+            Console.WriteLine("infinit");
+        }
+        else if (a == 0 && b == 0 && c != 0)
+        {
+            Console.WriteLine("fara solutii");
+        }
+        else if (a == 0 && b != 0)
+        {
+          //  double c =
+         //   Console.WriteLine();
+        }
     }
 
     public static void Med05()
@@ -95,6 +164,28 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+        double greutateKg = 70;
+        double inaltimeM = 1.75;
+        double IMC = greutateKg / (inaltimeM * inaltimeM);
+        //double IMC = 22.9;
+
+        if (IMC < 18.5)
+        {
+            Console.WriteLine("Subponderal");
+        }
+        else if (IMC > 18.5 && IMC < 24.9)
+        {
+            Console.WriteLine("Normal");
+        }
+        else if (IMC > 25.0 && IMC < 29.9)
+        {
+            Console.WriteLine("Supraponderal");
+        }
+        else 
+        {
+            Console.WriteLine("obez");
+        }
+          
     }
 
     public static void Med06()
@@ -115,6 +206,13 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+
+        int luna = 2;
+        int an = 2024;
+        int zile = 0;
+
+       // if (luna )
+       
     }
 
     public static void Med07()
@@ -131,6 +229,7 @@ internal class ConditionaleNivelMediu
         // ============================================================
 
         // TODO
+
     }
 
     public static void Med08()

@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace initiere;
 //
 //  while(conditie){
@@ -165,19 +167,31 @@ internal class BuclaRepetitivaWhile
         // ============================================================
 
         // TODO
-        int n = 5;
-        int produs = 1;
-        int ct = 1;
-        while (ct !=1)
+        int n = 5; // am  decalrat variabila n si i-a,m atribuit valoareaa 5
+        int produs = 1;// am declarat variabila produs , la care am tribuit valoarea 1
+        int ct = 1; // am declarat variabila contor , la care am atribuit valoarea 1
+        while (ct !=n) 
         {
-            produs = produs + ct;
+            produs = produs * ct;//produs*=ct;
             ct = ct + 1;
+            //ct++
+            ct += 1;
+
         }
+        //1!=5 da   produs=2  ct=2 
+        //2!=5 da   produs=4  ct=3
+        //3!=5 da   produs=7  ct=4
+        //4!=5 da   produs=11 ct=5
+        //5!=5 nu
+
+
+
+
+
+
+
         Console.WriteLine(produs);
-        //1!=5 p=2 ct2
-        //2!=5 p=4 ct=3
-        //3!=5 p=7 ct=4
-        //4!=5 p=11 ct 5
+        
     }
 
     public static void While07()
@@ -197,6 +211,15 @@ internal class BuclaRepetitivaWhile
         // ============================================================
 
         // TODO
+        int n = 4;
+        int ct = 1;
+
+        while (ct <= 10)
+        {
+            Console.WriteLine(n + "*" + ct + "=" +(n*ct));
+            ct++;
+        }
+
     }
 
     public static void While08()
@@ -212,6 +235,18 @@ internal class BuclaRepetitivaWhile
         // ============================================================
 
         // TODO
+        int numar = 1234;
+        int cifre = 0;
+       
+
+        while (numar > 0) ;
+        {
+            numar = numar / 10;
+            cifre++;
+ 
+        }
+        //Console.WriteLine("")
+
     }
 
     public static void While09()
@@ -227,6 +262,18 @@ internal class BuclaRepetitivaWhile
         // ============================================================
 
         // TODO
+        int numar = 1234;
+        int suma = 10;
+
+        while (numar > 0)
+        {
+            suma = suma + (numar % 10);
+           
+           
+        }
+        Console.WriteLine("Suma cifre este" + suma);
+
+
     }
 
     public static void While10()
