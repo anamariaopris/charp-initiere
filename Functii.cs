@@ -125,7 +125,9 @@ namespace initiere
             {
                 int cifra = n % 10;
                 if (cifra % 2 == 0)
-                suma = suma + cifra ;
+                {
+                    suma = suma + cifra;
+                }
                 n = n / 10;
             }
 
