@@ -5,9 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
+       int cos= Functii.SumaCifrelorPare(1223);
 
-       int ceva= Functii.SumaCifrelor(1234);
-        Console.WriteLine(ceva);
+
+        Console.WriteLine(cos);
     }
+
 }
 
