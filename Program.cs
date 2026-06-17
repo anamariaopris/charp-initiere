@@ -5,7 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        BuclaRepetitivaWhile.While09();
+
+       int ceva= Functii.SumaCifrelor(1234);
+        Console.WriteLine(ceva);
     }
 }
 
