@@ -1,14 +1,13 @@
 ﻿using initiere;
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
     static void Main(string[] args)
     {
-       int cos= Functii.SumaCifrelorPare(1223);
-
-
-        Console.WriteLine(cos);
+        int functie = Functii.Factorial(5);
+        Console.WriteLine(functie);
     }
 
 }

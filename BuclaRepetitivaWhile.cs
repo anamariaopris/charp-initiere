@@ -289,5 +289,20 @@ internal class BuclaRepetitivaWhile
         // ============================================================
 
         // TODO
+
+        int numar = 1234;
+        int invers = 0;
+
+        while (numar > 0)
+        {
+            int cifra = numar % 10;
+      
+            invers = invers * 10 + cifra;
+
+            numar = numar / 10;
+        }
+        Console.WriteLine("inversul numarului este" + invers);
+
     }
 }
+
