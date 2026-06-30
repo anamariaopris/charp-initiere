@@ -93,16 +93,18 @@ internal class ExercitiiNoi
     public static int SumaDepasestePrag(int n)
     {
         int suma = 0;
-        int numar = 1;
-        int prag = 0;
 
-        while (suma < prag)
+        int ct = 1;
+      
+                       
+
+        while (suma < n)
         {
-            suma = suma + numar;
-            numar++;
-
+            suma = suma + ct;
+            ct++;
+            
         }
-        return numar;
+        return suma;
 
 
     }
@@ -127,10 +129,10 @@ internal class ExercitiiNoi
             }
 
             numar = numar / 10; // elimin ultima cifra
-            return contor; 
+           
         }
+        return contor;
 
-      
     }
 
     //W6. Cea mai mare cifră Pentru un int numar pozitiv, găsește și afișează cea mai mare cifră a lui.
@@ -139,23 +141,55 @@ internal class ExercitiiNoi
     public static int CeaMaiMareCifra(int n)
     {
         int maximNumar = 0;
-        int cifra = 0;
-        int numar = 0;
+       
 
-        while(maximNumar > 0)
+        while(n > 0)
         {
-            int cifra = maximNumar % 10;  // ultima cifra
+            int uc = n % 10;  // ultima cifra
 
-            if (cifra > maximNumar)
-
+            if (uc > maximNumar)
+            {
+                maximNumar = uc;
+               
+            }
+            n = n / 10;
+           
 
         }
+        return maximNumar;
 
 
     }
 
+    
+    //F3. bool EstePerfect(int n) Un număr e perfect dacă e egal cu suma divizorilor săi proprii (fără el însuși).
+    //Folosește F2.Exemplu: EstePerfect(6) → true (1+2+3 = 6).
+    
+    public static int  SumaDivizorilor(int n )
+    {
+
+        int ct = 1;
+        int suma = 0;
+        while (ct < n)
+        {
+            if (n % ct == 0)
+            {
+                suma += ct;//suma=suma+ct;
+             
+            }
+            ct++;
+
+        }
+        return suma;
 
 
+    }
+
+   public static bool EstePerfect(int numar)
+    {
+
+        return SumaDivizorilor(numar) == numar;
+    }
 
 
 

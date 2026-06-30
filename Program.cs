@@ -6,8 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        int functie = ExercitiiNoi.NumarCifrePare(12345);
-        Console.WriteLine( functie );
+       bool functie = ExercitiiNoi.EstePerfect(6);
+        Console.WriteLine(functie);
     }
 
 }
