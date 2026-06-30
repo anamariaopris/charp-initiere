@@ -6,8 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        int functie = Functii.Factorial(5);
-        Console.WriteLine(functie);
+        int functie = ExercitiiNoi.NumarCifrePare(12345);
+        Console.WriteLine( functie );
     }
 
 }
